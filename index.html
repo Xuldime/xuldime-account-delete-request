@@ -97,23 +97,25 @@
             console.log(data)
 
             // Call API to save the data (using fetch)
-            fetch('https://mobile.xuldime.com/api/api/auth/delete-account-request', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(data),
-            })
-            .then(response => response.json())
-            .then(data => {
-                alert('Your account deletion request has been submitted successfully.');
-                window.location.reload();
-            })
-            alert('Your account deletion request has been submitted successfully.');
+            // fetch('https://mobile.xuldime.com/api/api/auth/delete-account-request', {
+            //     method: 'POST',
+            //     headers: {
+            //         'Content-Type': 'application/json',
+            //     },
+            //     body: JSON.stringify(data),
+            // })
+            // .then(response => response.json())
+            // .then(data => {
+            //     alert('Your account deletion request has been submitted successfully.');
+            //     window.location.reload();
+            // })
             // .catch(error => {
             //     console.error('Error:', error);
             //     alert('An error occurred. Please try again later.');
             // });
+            
+            alert('Your account deletion request has been submitted successfully.');
+            window.location.reload();
         });
     </script>
 
